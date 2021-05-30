@@ -27,6 +27,15 @@ section {
     margin-right: auto;
 }
 
+@media (max-width: 1700px) {
+    .page-width {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+}
+
 .game-discount, .game-price {
     font: 20px Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
