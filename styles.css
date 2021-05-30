@@ -125,6 +125,10 @@ section {
     border-radius: 10px;
 }
 
+#search-box label {
+    display: none;
+}
+
 #search-box input {
     flex-grow: 1;
     border: none;
