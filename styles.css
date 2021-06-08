@@ -86,7 +86,6 @@ dl, dt, dd {
 #top-menu > ul > li > a > i.fas {
     margin-right: 5px;
     position: relative;
-    top: -1px;
 }
 
 #top-menu > ul > li > a:hover {
