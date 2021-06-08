@@ -306,12 +306,6 @@ main {
    margin-bottom: 2px; 
 }
 
-@media (max-width: 1400px) {
-    .game-specs {
-
-    }
-}
-
 @media (max-width: 1200px) {
     #carousel .game-cover .left-arrow, 
     #carousel .game-cover .right-arrow {
