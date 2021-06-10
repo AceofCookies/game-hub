@@ -22,3 +22,8 @@
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
+#continue-button {
+  display: block;
+  margin: 40px auto 0px auto;
+}
