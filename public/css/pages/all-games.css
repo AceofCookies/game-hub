@@ -1,27 +1,6 @@
-#all-games.game-list {
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#all-games .game-list-item {
-  width: calc(50% - 12.5px);
-}
-
 #view-more {
   margin-top: 50px;
   text-align: center;
   text-decoration: underline;
   color: #1b203d;
-}
-
-@media (max-width: 1200px) {
-  #all-games.game-list {
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-
-  #all-games .game-list-item {
-    width: auto;
-  }
 }

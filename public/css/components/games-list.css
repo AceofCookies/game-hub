@@ -75,3 +75,28 @@
   transform: rotate(20deg);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
 }
+
+/*
+ * Multi column game list.
+ */
+
+.game-list.multi-column {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.game-list.multi-column .game-list-item {
+  width: calc(50% - 12.5px);
+}
+
+@media (max-width: 1200px) {
+  .game-list.multi-column {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .game-list.multi-column .game-list-item {
+    width: auto;
+  }
+}
