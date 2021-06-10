@@ -48,3 +48,10 @@
   color: #1b203d;
   border: 1px solid #1b203d;
 }
+
+.centered-link {
+  margin-top: 25px;
+  text-align: center;
+  text-decoration: underline;
+  color: #1b203d;
+}
