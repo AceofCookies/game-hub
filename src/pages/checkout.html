@@ -8,8 +8,8 @@
     {% include "fragments/header.html" %}
 
     <main>
-      <div id="bestsellers-and-most-wishlisted" class="page-width">
-        <section>
+      <section class="page-width two-column-layout">
+        <div>
           <h2>Shopping cart</h2>
 
           <div class="game-list">
@@ -129,9 +129,9 @@
               </div>
             </a>
           </div>
-        </section>
+        </div>
 
-        <section>
+        <div>
           <h2>Checkout</h2>
 
           <div id="checkout">
@@ -144,8 +144,8 @@
             <button class="button">Purchase</button>
             <button class="button alt">Purchase as gift</button>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     {% include "fragments/footer.html" %}

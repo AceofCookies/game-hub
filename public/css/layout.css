@@ -153,3 +153,34 @@ footer > div {
     justify-content: space-evenly;
   }
 }
+
+/*
+ * Two column layout
+ */
+
+.two-column-layout {
+  display: flex;
+  justify-content: stretch;
+}
+
+@media (max-width: 1200px) {
+  .two-column-layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.two-column-layout > * {
+  flex-grow: 1;
+  flex-basis: 1px;
+}
+
+.two-column-layout > *:first-child {
+  margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .two-column-layout > *:first-child {
+    margin-right: 0px;
+  }
+}

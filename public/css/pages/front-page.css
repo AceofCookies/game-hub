@@ -205,32 +205,3 @@
     margin-bottom: 20px;
   }
 }
-
-#bestsellers-and-most-wishlisted {
-  display: flex;
-  justify-content: stretch;
-}
-
-@media (max-width: 1200px) {
-  #bestsellers-and-most-wishlisted {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-
-#bestsellers-and-most-wishlisted section {
-  flex-grow: 1;
-  flex-basis: 1px;
-}
-
-#bestsellers-and-most-wishlisted section:first-child {
-  flex-grow: 1;
-  flex-basis: 1px;
-  margin-right: 50px;
-}
-
-@media (max-width: 1200px) {
-  #bestsellers-and-most-wishlisted section:first-child {
-    margin-right: 0px;
-  }
-}
