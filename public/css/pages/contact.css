@@ -1,0 +1,27 @@
+#contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-wrapper > div {
+  width: calc(50% - 10px);
+}
+
+#contact-map {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  #contact-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #contact-wrapper > div {
+    width: initial;
+  }
+
+  #contact-text {
+    margin-bottom: 10px;
+  }
+}

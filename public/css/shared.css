@@ -1,0 +1,29 @@
+.page-width {
+  width: 1650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: calc(1650px * 1.04)) {
+  .page-width {
+    width: 100%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    box-sizing: border-box;
+  }
+}
+
+.game-discount,
+.game-price {
+  font: 20px Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.game-discount {
+  background-color: #ff8100;
+  color: #1b203d;
+}
+
+.game-price {
+  background-color: #1b203d;
+  color: #ff8100;
+}

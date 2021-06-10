@@ -1,0 +1,236 @@
+#carousel {
+  height: 480px;
+  margin: 0px auto;
+  background-color: #1b203d;
+  color: #fff;
+}
+
+#carousel > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+#carousel > div > div {
+  flex-grow: 1;
+  flex-basis: 1px;
+  max-width: 465px;
+}
+
+#carousel .game-cover {
+  display: flex;
+  flex-basis: 465px;
+  flex-grow: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#carousel .game-cover .left-arrow,
+#carousel .game-cover .right-arrow {
+  width: 0px;
+  height: 0px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+#carousel .game-cover .left-arrow:hover,
+#carousel .game-cover .right-arrow:hover {
+  opacity: 1;
+}
+
+#carousel .game-cover .left-arrow {
+  border-top: 30px solid transparent;
+  border-right: 50px solid #ff8100;
+  border-bottom: 30px solid transparent;
+}
+
+#carousel .game-cover .right-arrow {
+  border-top: 30px solid transparent;
+  border-left: 50px solid #ff8100;
+  border-bottom: 30px solid transparent;
+}
+
+#carousel .game-cover .center-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#carousel .game-cover .center-column .dots {
+  display: flex;
+  height: 24px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#carousel .game-cover .center-column .dots .left-arrow,
+#carousel .game-cover .center-column .dots .right-arrow {
+  display: none;
+  border-top-width: 12px;
+  border-bottom-width: 12px;
+}
+
+#carousel .game-cover .center-column .dots .left-arrow {
+  border-right-width: 20px;
+}
+
+#carousel .game-cover .center-column .dots .right-arrow {
+  border-left-width: 20px;
+}
+
+#carousel .game-cover .center-column .dots .dot {
+  width: 20px;
+  height: 20px;
+  background-color: #ff8100;
+  opacity: 0.3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#carousel .game-cover .center-column .dots > div {
+  margin-right: 7px;
+}
+
+#carousel .game-cover .center-column .dots > div:last-child {
+  margin-right: 0px;
+}
+
+#carousel .game-cover .center-column .dots .dot:hover,
+#carousel .game-cover .center-column .dots .dot.active {
+  opacity: 1;
+}
+
+#carousel .game-specs dl {
+  margin-bottom: 20px;
+}
+
+#carousel .game-specs dl:last-child {
+  margin-bottom: 0px;
+}
+
+#carousel .game-specs dt {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 1200px) {
+  #carousel .game-cover .left-arrow,
+  #carousel .game-cover .right-arrow {
+    display: none;
+  }
+
+  #carousel .game-cover .center-column .dots .left-arrow,
+  #carousel .game-cover .center-column .dots .right-arrow {
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  #carousel > div {
+    flex-direction: row-reverse;
+  }
+
+  #carousel .game-cover {
+    flex-basis: 400px;
+  }
+
+  .game-specs {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #carousel > div {
+    flex-direction: column-reverse;
+  }
+
+  #carousel {
+    height: initial;
+    margin: 0px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #1b203d;
+    color: #fff;
+  }
+
+  #carousel .game-info > h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+#deals-covers {
+  display: flex;
+  justify-content: space-between;
+}
+
+#deals-covers > a {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+#deals-covers > a:last-child {
+  margin-right: 0px;
+}
+
+#deals-covers > a > img {
+  width: 100%;
+}
+
+#deals-covers > a > div {
+  display: flex;
+  align-items: stretch;
+  height: 40px;
+}
+
+#deals-covers .game-discount,
+#deals-covers .game-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 1px;
+}
+
+@media (max-width: 1200px) {
+  #deals-covers {
+    flex-wrap: wrap;
+  }
+
+  #deals-covers > a {
+    width: calc(50% - 10px);
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+#bestsellers-and-most-wishlisted {
+  display: flex;
+  justify-content: stretch;
+}
+
+@media (max-width: 1200px) {
+  #bestsellers-and-most-wishlisted {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+#bestsellers-and-most-wishlisted section {
+  flex-grow: 1;
+  flex-basis: 1px;
+}
+
+#bestsellers-and-most-wishlisted section:first-child {
+  flex-grow: 1;
+  flex-basis: 1px;
+  margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+  #bestsellers-and-most-wishlisted section:first-child {
+    margin-right: 0px;
+  }
+}
