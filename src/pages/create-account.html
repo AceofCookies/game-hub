@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "fragments/head.html" %}
+
+  <body>
+    {% include "fragments/header.html" %}
+
+    <main>
+      <section class="two-column-layout page-width">
+        <div id="account-form-column">
+          <h2>Create new account</h2>
+
+          <form class="form">
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <div class="subtext">We'll never share your email with anyone</div>
+            </div>
+            <div class="form-row">
+              <label for="pwd">Password</label>
+              <input type="password" id="pwd" name="pwd" />
+            </div>  
+            <div class="form-row">
+              <label for="full-name">Full name</label>
+              <input type="text" id="full-name" name="full-name" />
+            </div>  
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-row">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" />
+            </div>
+            <div class="form-row">
+            <button class="button">Create account</button>
+            </div>
+          </form>
+        </div>
+        <div id="join-us-column">
+          <img src="img/join-us.jpg" />
+        </div>
+      </section>
+    </main>
+
+    {% include "fragments/footer.html" %}
+  </body>
+</html>

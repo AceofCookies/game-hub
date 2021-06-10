@@ -1,0 +1,44 @@
+#account-form-column {
+  flex-grow: 1;
+}
+
+.form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 46px;
+  align-items: flex-start;
+}
+
+.form label {
+  margin-bottom: 10px;
+}
+
+.form .form-row:last-child {
+  margin-bottom: 0px;
+}
+
+.form .subtext {
+  position: relative;
+  top: 18px;
+  margin-top: -13px;
+  height: 13px;
+  font-size: 12px;
+  opacity: 70%;
+}
+
+.form .form-row > input {
+  border-radius: 5px;
+  border: 1px solid #e0dedb;
+  padding: 0px 10px 0px 10px;
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+#join-us-column {
+  flex-grow: 2;
+}
+
+#join-us-column > img {
+  width: 100%;
+}
