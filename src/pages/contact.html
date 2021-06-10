@@ -1,0 +1,39 @@
+{% set title = "Contact | Game Hub" %}
+{% set description = "Game Hub contact information and a neat map" %}
+<!DOCTYPE html>
+<html lang="en">
+  {% include "fragments/head.html" %}
+
+  <body>
+    {% include "fragments/header.html" %}
+
+    <main>
+      <div id="contact-wrapper" class="page-width">
+        <div>
+          <img id="contact-map" src="img\MapsCutout.png" alt="Location map" />
+        </div>
+        <div id="contact-text">
+          <h2>Our offices</h2>
+
+          <dl>
+            <dt>Address</dt>
+            <dd>79.498774, 23.954553</dd>
+
+            <dt>Phone</dt>
+            <dd>815-GAMEHUB (815-4263-428)</dd>
+
+            <dt>Email</dt>
+            <dd>post@gamehub.com</dd>
+          </dl>
+
+          <p>
+            We encourage all our customers to stop on by for an ice cold Mønster
+            and a round of &lt;insert computer game here&gt;.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    {% include "fragments/footer.html" %}
+  </body>
+</html>
