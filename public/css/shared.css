@@ -27,3 +27,24 @@
   background-color: #1b203d;
   color: #ff8100;
 }
+
+.button-row .button {
+  margin-right: 10px;
+}
+
+.button {
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  border: none;
+  background-color: #1b203d;
+  color: #ff8100;
+}
+
+.button.alt {
+  background-color: transparent;
+  color: #1b203d;
+  border: 1px solid #1b203d;
+}

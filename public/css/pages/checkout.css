@@ -15,28 +15,6 @@
   margin-left: 15px;
 }
 
-#purchase-button,
-#gift-button {
-  border-radius: 3px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 20px;
-}
-
-#purchase-button {
-  border-color: transparent;
-  margin-right: 25px;
-  background-color: #1b203d;
-  color: #ff8100;
-}
-
-#gift-button {
-  background-color: transparent;
-  color: #1b203d;
-  border-color: #1b203d;
-}
-
 #checkout-hero {
   display: flex;
   justify-content: center;
