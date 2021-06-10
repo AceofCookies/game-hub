@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search results | Game Hub</title>
+    <meta name="description" content="Game Hub search result page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="top-menu" class="page-width" aria-label="Top menu">
+        <ul>
+          <li>
+            <a id="sign-in-link" href="#">
+              <i class="fas fa-user"></i>
+              Sign in
+            </a>
+          </li>
+          <li>
+            <a id="checkout-link" href="#">
+              <i class="fas fa-shopping-cart"></i>
+              Checkout
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <img id="logo" src="img/GameHub_Logo.png" alt="Logo" />
+
+      <nav id="main-menu" aria-label="Main menu">
+        <div id="main-menu-inner" class="page-width">
+          <ul>
+            <li>
+              <a class="active" href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="all-games.html">Games</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div id="search-box">
+            <label for="search">Search</label>
+            <input
+              id="search"
+              type="text"
+              placeholder="Search for adventure"
+              value="space"
+            />
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-width">
+        <h2>Search Results</h2>
+
+        <div class="dropdown-wrapper">
+          <p>Sort by</p>
+          <button class="dropdown-button">Relevance</button>
+          <div class="dropdown-content">
+            <a href="#">Most Popular</a>
+            <a href="#">Most Wishlisted</a>
+            <a href="#">Highest Ratings</a>
+          </div>
+        </div>
+
+        <div class="game-list multi-column">
+          <a class="game-list-item" href="#">
+            <div>
+              <img src="img/GameHub_covers6.jpg" alt="insert game name here" />
+            </div>
+            <div class="game-description">
+              <h3>Space War</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                lacus ligula, sollicitudin at fringilla vel, faucibus
+                ullamcorper ante. Suspendisse porttitor, ligula ac vestibulum
+                ultrices, nibh leo tincidunt elit, quis consectetur dolor lacus
+                vitae tellus. Ut nec lectus sit amet purus fermentum sodales.
+                Nam posuere quam lobortis pellentesque laoreet. Sed vehicula
+                aliquam mauris eu egestas. Fusce eu maximus sapien. Nullam sed
+                accumsan justo. Ut sit amet erat vehicula, tincidunt mauris vel,
+                finibus ex. Fusce quis erat eu velit semper mollis condimentum
+                ut tortor. Praesent vitae diam purus. Sed blandit rutrum erat eu
+                aliquet. Praesent posuere nisl tristique felis consequat
+                hendrerit. Nulla tincidunt augue sem, vitae molestie ex ornare
+                at.
+              </p>
+            </div>
+            <div class="game-discount-and-price">
+              <div class="game-discount">-35%</div>
+              <div class="game-price">150 kr</div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="page-width">
+        <div>Copyright © 2021 Gamehub inc. Svalbard. All rights reserved.</div>
+
+        <div>
+          What are you doing down here, all the good stuff is up there!☝️
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

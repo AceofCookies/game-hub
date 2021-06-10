@@ -1,0 +1,62 @@
+{% set title = "Search results | Game Hub" %}
+{% set description = "Game Hub search result page" %}
+{% set search_box_value = "space" %}
+<!DOCTYPE html>
+<html lang="en">
+  {% include "fragments/head.html" %}
+
+  <body>
+    {% include "fragments/header.html" %}
+
+    <main>
+      <section class="page-width">
+        <h2>Search Results</h2>
+
+        <div class="dropdown-wrapper">
+          <p>Sort by</p>
+          <button class="dropdown-button">Relevance</button>
+          <div class="dropdown-content">
+            <a href="#">Most Popular</a>
+            <a href="#">Most Wishlisted</a>
+            <a href="#">Highest Ratings</a>
+          </div>
+        </div>
+
+        <div class="game-list multi-column">
+          <a class="game-list-item" href="#">
+            <div>
+              <img
+                src="img/GameHub_covers6.jpg"
+                alt="insert game name here"
+              />
+            </div>
+            <div class="game-description">
+              <h3>Space War</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam lacus ligula, sollicitudin at fringilla vel, faucibus
+                ullamcorper ante. Suspendisse porttitor, ligula ac vestibulum
+                ultrices, nibh leo tincidunt elit, quis consectetur dolor
+                lacus vitae tellus. Ut nec lectus sit amet purus fermentum
+                sodales. Nam posuere quam lobortis pellentesque laoreet. Sed
+                vehicula aliquam mauris eu egestas. Fusce eu maximus sapien.
+                Nullam sed accumsan justo. Ut sit amet erat vehicula,
+                tincidunt mauris vel, finibus ex. Fusce quis erat eu velit
+                semper mollis condimentum ut tortor. Praesent vitae diam
+                purus. Sed blandit rutrum erat eu aliquet. Praesent posuere
+                nisl tristique felis consequat hendrerit. Nulla tincidunt
+                augue sem, vitae molestie ex ornare at.
+              </p>
+            </div>
+            <div class="game-discount-and-price">
+              <div class="game-discount">-35%</div>
+              <div class="game-price">150 kr</div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    {% include "fragments/footer.html" %}
+  </body>
+</html>
