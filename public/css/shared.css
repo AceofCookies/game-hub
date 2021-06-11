@@ -69,3 +69,10 @@
 .definition-list dd {
   margin-bottom: 20px;
 }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  background-color: #e0dedb;
+  padding: 70px 2vw 70px 2vw;
+}

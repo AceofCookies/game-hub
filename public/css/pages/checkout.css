@@ -15,14 +15,6 @@
   margin-left: 15px;
 }
 
-#checkout-hero {
-  display: flex;
-  justify-content: center;
-  background-color: #e0dedb;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
 #continue-button {
   display: block;
   margin: 40px auto 0px auto;
