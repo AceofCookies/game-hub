@@ -1,0 +1,11 @@
+#account-form-column {
+  flex-grow: 1;
+}
+
+#join-us-column {
+  flex-grow: 2;
+}
+
+#join-us-column > img {
+  width: 100%;
+}

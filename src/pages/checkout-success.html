@@ -5,23 +5,27 @@
   {% include "fragments/head.html" %}
 
   <body>
-    {% include "fragments/header.html" %}
+    {% include "fragments/sign-in-modal.html" %}
 
-    <main>
-      <section>
-        <div class="hero">
-          <div>
-            <h2>Successful Purchase</h2>
-            <p>Receipt has been sent to your email address.</p>
-            <p>Ordernumber: #3347000000</p>
-            <p>Adventure awaits!</p>
+    <div id="content">
+      {% include "fragments/header.html" %}
+
+      <main>
+        <section>
+          <div class="hero">
+            <div>
+              <h2>Successful Purchase</h2>
+              <p>Receipt has been sent to your email address.</p>
+              <p>Ordernumber: #3347000000</p>
+              <p>Adventure awaits!</p>
+            </div>
           </div>
-        </div>
 
-        <button id="continue-button" class="button">Continue shopping</button>
-      </section>
-    </main>
+          <button id="continue-button" class="button">Continue shopping</button>
+        </section>
+      </main>
 
-    {% include "fragments/footer.html" %}
+      {% include "fragments/footer.html" %}
+    </div>
   </body>
 </html>

@@ -27,92 +27,121 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/sign-in-modal.js"></script>
   </head>
 
   <body>
-    <header>
-      <nav id="top-menu" class="page-width" aria-label="Top menu">
-        <ul>
-          <li>
-            <a id="sign-in-link" href="#">
-              <i class="fas fa-user"></i>
-              Sign in
-            </a>
-          </li>
-          <li>
-            <a id="checkout-link" href="#">
-              <i class="fas fa-shopping-cart"></i>
-              Checkout
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <div class="top-text">
+          Sign in to buy and sell games on our marketplace!
+        </div>
+        <form class="form">
+          <input type="email" name="email" placeholder="Email" />
+          <input type="password" name="pwd" placeholder="Password" />
+          <button class="button">Sign in!</button>
+          <div class="bottom-text">
+            Don't have an account? <a href="#">Create one here!</a>
+          </div>
+        </form>
+      </div>
+    </div>
 
-      <img id="logo" src="img/GameHub_Logo.png" alt="Logo" />
-
-      <nav id="main-menu" aria-label="Main menu">
-        <div id="main-menu-inner" class="page-width">
+    <div id="content">
+      <header>
+        <nav id="top-menu" class="page-width" aria-label="Top menu">
           <ul>
             <li>
-              <a class="active" href="index.html">Home</a>
+              <a id="sign-in-link" href="#">
+                <i class="fas fa-user"></i>
+                Sign in
+              </a>
             </li>
             <li>
-              <a href="all-games.html">Games</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
+              <a id="checkout-link" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                Checkout
+              </a>
             </li>
           </ul>
-          <div id="search-box">
-            <label for="search">Search</label>
-            <input
-              id="search"
-              type="text"
-              placeholder="Search for adventure"
-              value=""
-            />
-            <i class="fas fa-search"></i>
+        </nav>
+
+        <img id="logo" src="img/GameHub_Logo.png" alt="Logo" />
+
+        <nav id="main-menu" aria-label="Main menu">
+          <div id="main-menu-inner" class="page-width">
+            <ul>
+              <li>
+                <a class="active" href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="all-games.html">Games</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div id="search-box">
+              <label for="search">Search</label>
+              <input
+                id="search"
+                type="text"
+                placeholder="Search for adventure"
+                value=""
+              />
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="contact-wrapper" class="page-width">
+          <div>
+            <img id="contact-map" src="img\MapsCutout.png" alt="Location map" />
+          </div>
+
+          <div id="contact-text">
+            <h2>Our offices</h2>
+
+            <dl>
+              <dt>Address</dt>
+              <dd>79.498774, 23.954553</dd>
+
+              <dt>Phone</dt>
+              <dd>815-GAMEHUB (815-4263-428)</dd>
+
+              <dt>Email</dt>
+              <dd>post@gamehub.com</dd>
+            </dl>
+
+            <p>
+              We encourage all our customers to stop on by for an ice cold
+              Mønster and a round of &lt;insert computer game here&gt;.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="page-width">
+          <div>
+            Copyright © 2021 Gamehub inc. Svalbard. All rights reserved.
+          </div>
+
+          <div>
+            What are you doing down here, all the good stuff is up there!☝️
           </div>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section id="contact-wrapper" class="page-width">
-        <div>
-          <img id="contact-map" src="img\MapsCutout.png" alt="Location map" />
-        </div>
-
-        <div id="contact-text">
-          <h2>Our offices</h2>
-
-          <dl>
-            <dt>Address</dt>
-            <dd>79.498774, 23.954553</dd>
-
-            <dt>Phone</dt>
-            <dd>815-GAMEHUB (815-4263-428)</dd>
-
-            <dt>Email</dt>
-            <dd>post@gamehub.com</dd>
-          </dl>
-
-          <p>
-            We encourage all our customers to stop on by for an ice cold Mønster
-            and a round of &lt;insert computer game here&gt;.
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="page-width">
-        <div>Copyright © 2021 Gamehub inc. Svalbard. All rights reserved.</div>
-
-        <div>
-          What are you doing down here, all the good stuff is up there!☝️
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

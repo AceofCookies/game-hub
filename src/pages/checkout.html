@@ -5,149 +5,153 @@
   {% include "fragments/head.html" %}
 
   <body>
-    {% include "fragments/header.html" %}
+    {% include "fragments/sign-in-modal.html" %}
 
-    <main>
-      <section class="page-width two-column-layout">
-        <div>
-          <h2>Shopping cart</h2>
+    <div id="content">
+      {% include "fragments/header.html" %}
 
-          <div class="game-list">
-            <a class="game-list-item" href="#">
-              <div>
-                <img
-                  src="img/covers/GameHub_covers6.jpg"
-                  alt="insert game name here"
-                />
-              </div>
-              <div class="game-description">
-                <h3>Space War</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam lacus ligula, sollicitudin at fringilla vel, faucibus
-                  ullamcorper ante. Suspendisse porttitor, ligula ac vestibulum
-                  ultrices, nibh leo tincidunt elit, quis consectetur dolor
-                  lacus vitae tellus. Ut nec lectus sit amet purus fermentum
-                  sodales. Nam posuere quam lobortis pellentesque laoreet. Sed
-                  vehicula aliquam mauris eu egestas. Fusce eu maximus sapien.
-                  Nullam sed accumsan justo. Ut sit amet erat vehicula,
-                  tincidunt mauris vel, finibus ex. Fusce quis erat eu velit
-                  semper mollis condimentum ut tortor. Praesent vitae diam
-                  purus. Sed blandit rutrum erat eu aliquet. Praesent posuere
-                  nisl tristique felis consequat hendrerit. Nulla tincidunt
-                  augue sem, vitae molestie ex ornare at.
-                </p>
-              </div>
-              <div class="game-discount-and-price">
-                <div class="game-discount">-35%</div>
-                <div class="game-price">150 kr</div>
-              </div>
-            </a>
-            <a class="game-list-item" href="#">
-              <div>
-                <img src="img/covers/GameHub_covers.jpg" alt="insert game name here" />
-              </div>
-              <div class="game-description">
-                <h3>Ping Pong Championship</h3>
-                <p>
-                  Proin auctor felis id arcu dictum, nec varius orci interdum.
-                  Donec nec sapien ac nisl vulputate imperdiet eu vitae neque.
-                  Etiam consectetur in risus non ultrices. Nullam congue turpis
-                  quis odio cursus aliquam. Nunc euismod odio nibh, id
-                  ullamcorper quam imperdiet a. Cras sed dui diam. Etiam ac
-                  iaculis elit, et sagittis nisl.
-                </p>
-              </div>
-              <div class="game-discount-and-price">
-                <div class="game-discount">-55%</div>
-                <div class="game-price">690 kr</div>
-              </div>
-            </a>
-            <a class="game-list-item" href="#">
-              <div>
-                <img
-                  src="img/covers/GameHub_covers2.jpg"
-                  alt="insert game name here"
-                />
-              </div>
-              <div class="game-description">
-                <h3>Super Duper</h3>
-                <p>
-                  Fusce pharetra vitae orci ac tempus. Vivamus tincidunt arcu
-                  ullamcorper purus maximus bibendum. Donec at rutrum arcu.
-                  Mauris fermentum quam nulla, sed tincidunt quam cursus at.
-                  Pellentesque sed condimentum turpis. Proin egestas tempus
-                  nisl, vitae venenatis leo feugiat efficitur. Aliquam lacus
-                  urna, pellentesque dapibus facilisis non, sagittis non diam.
-                  Sed sit amet consectetur lorem, id viverra justo. Donec
-                  ultricies est sit amet ante commodo tincidunt. Sed ultrices
-                  eleifend mi.
-                </p>
-              </div>
-              <div class="game-discount-and-price">
-                <div class="game-discount">-95%</div>
-                <div class="game-price">10 kr</div>
-              </div>
-            </a>
-            <a class="game-list-item" href="#">
-              <div>
-                <img
-                  src="img/covers/GameHub_covers3.jpg"
-                  alt="insert game name here"
-                />
-              </div>
-              <div class="game-description">
-                <h3>Black</h3>
-                <p>Ut rutrum metus quis ullamcorper tempus.</p>
-              </div>
-              <div class="game-discount-and-price">
-                <div class="game-discount">-40%</div>
-                <div class="game-price">100 kr</div>
-              </div>
-            </a>
-            <a class="game-list-item" href="#">
-              <div>
-                <img
-                  src="img/covers/GameHub_covers4.jpg"
-                  alt="insert game name here"
-                />
-              </div>
-              <div class="game-description">
-                <h3>Furious</h3>
-                <p>
-                  Pellentesque vitae sodales massa, a tincidunt nisi. Integer
-                  porta ex nec eros dignissim ornare. Aenean luctus neque in
-                  laoreet viverra. Fusce mauris felis, pellentesque eget ligula
-                  tincidunt, ullamcorper venenatis nunc.
-                </p>
-              </div>
-              <div class="game-discount-and-price">
-                <div class="game-discount">
-                  <div class="pre-purchase">Pre-purchase</div>
+      <main>
+        <section class="page-width two-column-layout">
+          <div>
+            <h2>Shopping cart</h2>
+
+            <div class="game-list">
+              <a class="game-list-item" href="game-details.html">
+                <div>
+                  <img
+                    src="img/covers/GameHub_covers6.jpg"
+                    alt="insert game name here"
+                  />
                 </div>
-                <div class="game-price">100 kr</div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div>
-          <h2>Checkout</h2>
-
-          <div id="checkout">
-            <div id="checkout-content">
-              <p>Total price</p>
-              <h2>xxxx kr</h2>
+                <div class="game-description">
+                  <h3>Space War</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam lacus ligula, sollicitudin at fringilla vel, faucibus
+                    ullamcorper ante. Suspendisse porttitor, ligula ac vestibulum
+                    ultrices, nibh leo tincidunt elit, quis consectetur dolor
+                    lacus vitae tellus. Ut nec lectus sit amet purus fermentum
+                    sodales. Nam posuere quam lobortis pellentesque laoreet. Sed
+                    vehicula aliquam mauris eu egestas. Fusce eu maximus sapien.
+                    Nullam sed accumsan justo. Ut sit amet erat vehicula,
+                    tincidunt mauris vel, finibus ex. Fusce quis erat eu velit
+                    semper mollis condimentum ut tortor. Praesent vitae diam
+                    purus. Sed blandit rutrum erat eu aliquet. Praesent posuere
+                    nisl tristique felis consequat hendrerit. Nulla tincidunt
+                    augue sem, vitae molestie ex ornare at.
+                  </p>
+                </div>
+                <div class="game-discount-and-price">
+                  <div class="game-discount">-35%</div>
+                  <div class="game-price">150 kr</div>
+                </div>
+              </a>
+              <a class="game-list-item" href="game-details.html">
+                <div>
+                  <img src="img/covers/GameHub_covers.jpg" alt="insert game name here" />
+                </div>
+                <div class="game-description">
+                  <h3>Ping Pong Championship</h3>
+                  <p>
+                    Proin auctor felis id arcu dictum, nec varius orci interdum.
+                    Donec nec sapien ac nisl vulputate imperdiet eu vitae neque.
+                    Etiam consectetur in risus non ultrices. Nullam congue turpis
+                    quis odio cursus aliquam. Nunc euismod odio nibh, id
+                    ullamcorper quam imperdiet a. Cras sed dui diam. Etiam ac
+                    iaculis elit, et sagittis nisl.
+                  </p>
+                </div>
+                <div class="game-discount-and-price">
+                  <div class="game-discount">-55%</div>
+                  <div class="game-price">690 kr</div>
+                </div>
+              </a>
+              <a class="game-list-item" href="game-details.html">
+                <div>
+                  <img
+                    src="img/covers/GameHub_covers2.jpg"
+                    alt="insert game name here"
+                  />
+                </div>
+                <div class="game-description">
+                  <h3>Super Duper</h3>
+                  <p>
+                    Fusce pharetra vitae orci ac tempus. Vivamus tincidunt arcu
+                    ullamcorper purus maximus bibendum. Donec at rutrum arcu.
+                    Mauris fermentum quam nulla, sed tincidunt quam cursus at.
+                    Pellentesque sed condimentum turpis. Proin egestas tempus
+                    nisl, vitae venenatis leo feugiat efficitur. Aliquam lacus
+                    urna, pellentesque dapibus facilisis non, sagittis non diam.
+                    Sed sit amet consectetur lorem, id viverra justo. Donec
+                    ultricies est sit amet ante commodo tincidunt. Sed ultrices
+                    eleifend mi.
+                  </p>
+                </div>
+                <div class="game-discount-and-price">
+                  <div class="game-discount">-95%</div>
+                  <div class="game-price">10 kr</div>
+                </div>
+              </a>
+              <a class="game-list-item" href="game-details.html">
+                <div>
+                  <img
+                    src="img/covers/GameHub_covers3.jpg"
+                    alt="insert game name here"
+                  />
+                </div>
+                <div class="game-description">
+                  <h3>Black</h3>
+                  <p>Ut rutrum metus quis ullamcorper tempus.</p>
+                </div>
+                <div class="game-discount-and-price">
+                  <div class="game-discount">-40%</div>
+                  <div class="game-price">100 kr</div>
+                </div>
+              </a>
+              <a class="game-list-item" href="game-details.html">
+                <div>
+                  <img
+                    src="img/covers/GameHub_covers4.jpg"
+                    alt="insert game name here"
+                  />
+                </div>
+                <div class="game-description">
+                  <h3>Furious</h3>
+                  <p>
+                    Pellentesque vitae sodales massa, a tincidunt nisi. Integer
+                    porta ex nec eros dignissim ornare. Aenean luctus neque in
+                    laoreet viverra. Fusce mauris felis, pellentesque eget ligula
+                    tincidunt, ullamcorper venenatis nunc.
+                  </p>
+                </div>
+                <div class="game-discount-and-price">
+                  <div class="game-discount">
+                    <div class="pre-purchase">Pre-purchase</div>
+                  </div>
+                  <div class="game-price">100 kr</div>
+                </div>
+              </a>
             </div>
           </div>
-          <div class="button-row">
-            <button class="button">Purchase</button>
-            <button class="button alt">Purchase as gift</button>
-          </div>
-        </div>
-      </section>
-    </main>
 
-    {% include "fragments/footer.html" %}
+          <div>
+            <h2>Checkout</h2>
+
+            <div id="checkout">
+              <div id="checkout-content">
+                <p>Total price</p>
+                <h2>xxxx kr</h2>
+              </div>
+            </div>
+            <div class="button-row">
+              <button class="button">Purchase</button>
+              <button class="button alt">Purchase as gift</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {% include "fragments/footer.html" %}
+    </div>
   </body>
 </html>

@@ -24,137 +24,166 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/sign-in-modal.js"></script>
   </head>
 
   <body>
-    <header>
-      <nav id="top-menu" class="page-width" aria-label="Top menu">
-        <ul>
-          <li>
-            <a id="sign-in-link" href="#">
-              <i class="fas fa-user"></i>
-              Sign in
-            </a>
-          </li>
-          <li>
-            <a id="checkout-link" href="#">
-              <i class="fas fa-shopping-cart"></i>
-              Checkout
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="modal-wrapper">
+      <div class="modal">
+        <div class="top-text">
+          Sign in to buy and sell games on our marketplace!
+        </div>
+        <form class="form">
+          <input type="email" name="email" placeholder="Email" />
+          <input type="password" name="pwd" placeholder="Password" />
+          <button class="button">Sign in!</button>
+          <div class="bottom-text">
+            Don't have an account? <a href="#">Create one here!</a>
+          </div>
+        </form>
+      </div>
+    </div>
 
-      <img id="logo" src="img/GameHub_Logo.png" alt="Logo" />
-
-      <nav id="main-menu" aria-label="Main menu">
-        <div id="main-menu-inner" class="page-width">
+    <div id="content">
+      <header>
+        <nav id="top-menu" class="page-width" aria-label="Top menu">
           <ul>
             <li>
-              <a class="active" href="index.html">Home</a>
+              <a id="sign-in-link" href="#">
+                <i class="fas fa-user"></i>
+                Sign in
+              </a>
             </li>
             <li>
-              <a href="all-games.html">Games</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
+              <a id="checkout-link" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                Checkout
+              </a>
             </li>
           </ul>
-          <div id="search-box">
-            <label for="search">Search</label>
-            <input
-              id="search"
-              type="text"
-              placeholder="Search for adventure"
-              value=""
-            />
-            <i class="fas fa-search"></i>
+        </nav>
+
+        <img id="logo" src="img/GameHub_Logo.png" alt="Logo" />
+
+        <nav id="main-menu" aria-label="Main menu">
+          <div id="main-menu-inner" class="page-width">
+            <ul>
+              <li>
+                <a class="active" href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="all-games.html">Games</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div id="search-box">
+              <label for="search">Search</label>
+              <input
+                id="search"
+                type="text"
+                placeholder="Search for adventure"
+                value=""
+              />
+              <i class="fas fa-search"></i>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
-    <main
-      id="game-details"
-      style="background-image: url(img/cyberpunk/background.jpg)"
-    >
-      <div>
-        <div id="game-details-header-and-buttons" class="page-width">
-          <h1>Cyberpunk</h1>
-          <section class="button-row">
-            <button id="add-to-wishlist" class="button alt">
-              <i class="far fa-heart"></i>
-              Add to wishlist
-            </button>
-
-            <button id="add-to-cart" class="button">
-              <i class="fas fa-shopping-cart"></i>
-              Add to cart
-            </button>
-          </section>
-        </div>
-        <section>
-          <div id="game-details-carousel-top">
-            <div class="left-arrow"></div>
-            <a href="#">
-              <img src="img/cyberpunk/image-8-big.jpg" />
-            </a>
-            <div class="right-arrow"></div>
-          </div>
-          <div id="game-details-carousel-bottom">
-            <a href="#">
-              <img src="img/cyberpunk/image-1.jpg" />
-            </a>
-            <a href="#">
-              <img src="img/cyberpunk/image-2.jpg" />
-            </a>
-            <a href="#">
-              <img src="img/cyberpunk/image-3.jpg" />
-            </a>
-            <a href="#">
-              <img src="img/cyberpunk/image-4.jpg" />
-            </a>
-            <a href="#" class="active">
-              <img src="img/cyberpunk/image-5.jpg" />
-            </a>
-            <a href="#">
-              <img src="img/cyberpunk/image-6.jpg" />
-            </a>
-            <a href="#">
-              <img src="img/cyberpunk/image-7.jpg" />
-            </a>
-            <a href="#">
-              <img src="img/cyberpunk/image-8.jpg" />
-            </a>
-            <a href="#">
-              <img src="img/cyberpunk/image-9.jpg" />
-            </a>
-          </div>
-        </section>
-
-        <div class="hero">
-          <div>
-            <h2>Game description</h2>
-            <p>Award winning bug free masterpiece - best game of 2077.</p>
-            <p>
-              Dolorporum que del et est et que et anis cum nos volorpor aut a
-              doluptatem dolupta temqui aut demolup tibuscitem. Ita quia cori
-              dolore plicide pore con ni ommolorrum quae optatent quam dolorum
-              facea sequam nam facipsum quo .
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="page-width">
-        <div>Copyright © 2021 Gamehub inc. Svalbard. All rights reserved.</div>
-
+      <main
+        id="game-details"
+        style="background-image: url(img/cyberpunk/background.jpg)"
+      >
         <div>
-          What are you doing down here, all the good stuff is up there!☝️
+          <div id="game-details-header-and-buttons" class="page-width">
+            <h1>Cyberpunk</h1>
+            <section class="button-row">
+              <button id="add-to-wishlist" class="button alt">
+                <i class="far fa-heart"></i>
+                Add to wishlist
+              </button>
+
+              <button id="add-to-cart" class="button">
+                <i class="fas fa-shopping-cart"></i>
+                Add to cart
+              </button>
+            </section>
+          </div>
+          <section>
+            <div id="game-details-carousel-top">
+              <div class="left-arrow"></div>
+              <a href="#">
+                <img src="img/cyberpunk/image-8-big.jpg" />
+              </a>
+              <div class="right-arrow"></div>
+            </div>
+            <div id="game-details-carousel-bottom">
+              <a href="#">
+                <img src="img/cyberpunk/image-1.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-2.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-3.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-4.jpg" />
+              </a>
+              <a href="#" class="active">
+                <img src="img/cyberpunk/image-5.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-6.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-7.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-8.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-9.jpg" />
+              </a>
+            </div>
+          </section>
+
+          <div class="hero">
+            <div>
+              <h2>Game description</h2>
+              <p>Award winning bug free masterpiece - best game of 2077.</p>
+              <p>
+                Dolorporum que del et est et que et anis cum nos volorpor aut a
+                doluptatem dolupta temqui aut demolup tibuscitem. Ita quia cori
+                dolore plicide pore con ni ommolorrum quae optatent quam dolorum
+                facea sequam nam facipsum quo .
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
+      </main>
+
+      <footer>
+        <div class="page-width">
+          <div>
+            Copyright © 2021 Gamehub inc. Svalbard. All rights reserved.
+          </div>
+
+          <div>
+            What are you doing down here, all the good stuff is up there!☝️
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
