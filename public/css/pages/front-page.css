@@ -39,18 +39,6 @@
   opacity: 1;
 }
 
-#carousel .game-cover .left-arrow {
-  border-top: 30px solid transparent;
-  border-right: 50px solid #ff8100;
-  border-bottom: 30px solid transparent;
-}
-
-#carousel .game-cover .right-arrow {
-  border-top: 30px solid transparent;
-  border-left: 50px solid #ff8100;
-  border-bottom: 30px solid transparent;
-}
-
 #carousel .game-cover .center-column {
   display: flex;
   flex-direction: column;
