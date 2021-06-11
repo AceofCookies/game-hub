@@ -1,0 +1,17 @@
+#payment-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+#payment-card i {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#payment-card i:hover {
+  opacity: 1;
+}
+
+#account-header {
+  margin-bottom: 0px;
+}

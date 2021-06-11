@@ -55,3 +55,17 @@
   text-decoration: underline;
   color: #1b203d;
 }
+
+.card {
+  padding: 20px;
+  background-color: #e0dedb;
+}
+
+.definition-list dt {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.definition-list dd {
+  margin-bottom: 20px;
+}

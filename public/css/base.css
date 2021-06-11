@@ -11,6 +11,10 @@ h2 {
   margin-bottom: 25px;
 }
 
+h3 {
+  font: 21px Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
 p {
   margin-top: 10px;
 }
