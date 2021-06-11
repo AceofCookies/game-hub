@@ -1,0 +1,81 @@
+{% set title = "Game details | Game Hub" %}
+{% set description = "Game spesific details" %}
+<!DOCTYPE html>
+<html lang="en">
+  {% include "fragments/head.html" %}
+
+  <body>
+    {% include "fragments/header.html" %}
+
+    <main id="game-details" style="background-image: url(img/cyberpunk/background.jpg);">
+      <div>
+          <div id="game-details-header-and-buttons" class="page-width">
+            <h1>Cyberpunk</h1>
+            <section class="button-row">
+              <button id="add-to-wishlist" class="button alt">
+                <i class="far fa-heart"></i>
+                Add to wishlist
+              </button>        
+
+              <button id="add-to-cart" class="button">
+                <i class="fas fa-shopping-cart"></i>
+                Add to cart
+              </button>
+            </section>
+          </div>
+          <section>
+            <div id="game-details-carousel-top">
+              <div class="left-arrow"></div>
+              <a href="#">
+                <img src="img/cyberpunk/image-8-big.jpg" />
+              </a>
+              <div class="right-arrow"></div>
+            </div>
+            <div id="game-details-carousel-bottom">
+              <a href="#">
+                <img src="img/cyberpunk/image-1.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-2.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-3.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-4.jpg" />
+              </a>
+              <a href="#" class="active">
+                <img src="img/cyberpunk/image-5.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-6.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-7.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-8.jpg" />
+              </a>
+              <a href="#">
+                <img src="img/cyberpunk/image-9.jpg" />
+              </a>
+            </div>
+
+          </section>
+
+        <div class="hero">
+          <div>
+            <h2>Game description</h2>
+            <p>Award winning bug free masterpiece - best game of 2077.</p>
+            <p>Dolorporum que del et est et que et anis
+            cum nos volorpor aut a doluptatem dolupta temqui aut demolup
+            tibuscitem. Ita quia cori dolore plicide pore con ni ommolorrum quae
+            optatent quam dolorum facea sequam nam facipsum quo .</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {% include "fragments/footer.html" %}
+  </body>
+</html>

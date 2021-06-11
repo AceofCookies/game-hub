@@ -1,0 +1,137 @@
+#game-details {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@media (max-width: 1600px) {
+  #game-details {
+    background-size: auto 900px;
+  }
+}
+
+#game-details > div {
+  background: linear-gradient(rgba(255, 255, 255, 0.5) 0px, #f8f8f8 900px);
+  padding-top: 75px;
+}
+
+/* Removes the default margin-top of the main element, since it doesn't fit the
+ * design of this page */
+#game-details {
+  margin-top: 0px;
+}
+
+/* Removes the default margin-top of sections since they don't fit the design of
+ * this page */
+#game-details section {
+  margin-top: initial;
+}
+
+#game-details-header-and-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#game-details-carousel-top {
+  display: flex;
+  margin-top: 125px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+#game-details-carousel-top .left-arrow {
+  border-right-color: #1b203d;
+}
+
+#game-details-carousel-top .right-arrow {
+  border-left-color: #1b203d;
+}
+
+#game-details-carousel-top .right-arrow:hover,
+#game-details-carousel-top .left-arrow:hover {
+  opacity: 0.7;
+}
+
+#game-details-carousel-top a {
+  margin: 0px 50px;
+}
+
+#game-details-carousel-top a img {
+  width: 100%;
+}
+
+#game-details-carousel-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+#game-details-carousel-bottom > a {
+  margin-right: 40px;
+}
+
+#game-details-carousel-bottom > a:last-child {
+  margin-right: 0px;
+}
+
+#game-details-carousel-bottom > a.active {
+  border: 5px solid #ff8100;
+}
+
+#game-details-carousel-bottom > a img {
+  display: block;
+}
+
+#game-details .hero {
+  margin-top: 100px;
+}
+
+#game-details .hero > div {
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  #game-details-header-and-buttons {
+    flex-direction: column;
+  }
+
+  #game-details-header-and-buttons .button-row {
+    margin-top: 20px;
+  }
+
+  #game-details-carousel-top {
+    margin: 50px 0px 0px 0px;
+  }
+
+  #game-details-carousel-top .left-arrow,
+  #game-details-carousel-top .right-arrow {
+    display: none;
+  }
+
+  #game-details-carousel-top a {
+    margin: 0px;
+  }
+
+  #game-details-carousel-bottom {
+    margin-top: 25px;
+  }
+
+  #game-details-carousel-bottom a {
+    margin-right: 10px;
+  }
+
+  #game-details-carousel-bottom img {
+    width: 150px;
+  }
+
+  #game-details .hero {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

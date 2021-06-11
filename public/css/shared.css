@@ -28,8 +28,16 @@
   color: #ff8100;
 }
 
+.button-row {
+  display: flex;
+}
+
 .button-row .button {
   margin-right: 10px;
+}
+
+.button-row .button:last-child {
+  margin-right: 0px;
 }
 
 .button {
@@ -41,6 +49,10 @@
   border: none;
   background-color: #1b203d;
   color: #ff8100;
+}
+
+.button i {
+  margin-right: 7px;
 }
 
 .button.alt {
