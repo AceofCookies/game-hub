@@ -7,6 +7,10 @@
   width: calc(50% - 10px);
 }
 
+#contact-wrapper .definition-list {
+  margin-bottom: 60px;
+}
+
 #contact-map {
   width: 100%;
 }
