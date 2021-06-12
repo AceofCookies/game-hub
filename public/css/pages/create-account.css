@@ -9,3 +9,26 @@
 #join-us-column > img {
   width: 100%;
 }
+
+@media (max-width: 1200px) {
+  #create-account-page .two-column-layout {
+    flex-direction: row;
+  }
+  #create-account-page .two-column-layout > *:first-child {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #create-account-page .form input {
+    width: 100%;
+  }
+
+  #create-account-page .two-column-layout > *:first-child {
+    margin-right: 0px;
+  }
+
+  #create-account-page .two-column-layout > *:last-child {
+    display: none;
+  }
+}
