@@ -44,6 +44,10 @@
   flex-direction: column;
 }
 
+#carousel .game-cover .center-column > img {
+  height: 350px;
+}
+
 #carousel .game-cover .center-column .dots {
   display: flex;
   height: 24px;
