@@ -8,7 +8,7 @@
         </a>
       </li>
       <li>
-        <a id="checkout-link" href="checkout.html">
+        <a id="checkout-link" href="checkout.html" {% if current_page == "checkout" %}class="active"{% endif %}>
           <i class="fas fa-shopping-cart"></i>
           Checkout
         </a>
@@ -24,13 +24,13 @@
     <div id="main-menu-inner" class="page-width">
       <ul>
         <li>
-          <a class="active" href="index.html">Home</a>
+          <a href="index.html" {% if current_page == "front-page" %}class="active"{% endif %}>Home</a>
         </li>
         <li>
-          <a href="all-games.html">Games</a>
+          <a href="all-games.html" {% if current_page == "all-games" %}class="active"{% endif %}>Games</a>
         </li>
         <li>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html" {% if current_page == "contact" %}class="active"{% endif %}>Contact</a>
         </li>
       </ul>
       <div id="search-box">
