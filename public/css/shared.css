@@ -89,6 +89,19 @@ a .button {
   margin-bottom: 20px;
 }
 
+.left-arrow,
+.right-arrow {
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  opacity: 1;
+}
+
 .left-arrow {
   border-top: 30px solid transparent;
   border-right: 50px solid #ff8100;

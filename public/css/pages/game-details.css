@@ -44,10 +44,12 @@
 
 #game-details-carousel-top .left-arrow {
   border-right-color: #1b203d;
+  opacity: 1;
 }
 
 #game-details-carousel-top .right-arrow {
   border-left-color: #1b203d;
+  opacity: 1;
 }
 
 #game-details-carousel-top .right-arrow:hover,
