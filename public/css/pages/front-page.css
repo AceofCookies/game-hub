@@ -26,8 +26,8 @@
   align-items: center;
 }
 
-#carousel .game-cover .left-arrow,
-#carousel .game-cover .right-arrow {
+#carousel .game-cover > .left-arrow,
+#carousel .game-cover > .right-arrow {
   position: relative;
   top: -23px;
 }
