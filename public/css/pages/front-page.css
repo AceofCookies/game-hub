@@ -170,13 +170,29 @@
   height: 40px;
 }
 
-#deals-covers .game-discount,
-#deals-covers .game-price {
+#deals-covers > a > div > div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
   flex-basis: 1px;
+}
+
+#deals-covers .game-links {
+  display: flex;
+}
+
+#deals-covers .game-links > div {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#deals-covers .game-links i {
+  margin-right: 5px;
+}
+
+#deals-covers .game-links > div:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
