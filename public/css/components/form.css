@@ -17,9 +17,10 @@
   position: relative;
   top: 18px;
   margin-top: -13px;
-  height: 13px;
+  min-height: 13px;
   font-size: 12px;
   opacity: 70%;
+  overflow-wrap: anywhere;
 }
 
 .form input {
