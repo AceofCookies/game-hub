@@ -30,3 +30,21 @@
   height: 40px;
   box-sizing: border-box;
 }
+
+.form .subtext.error {
+  display: none;
+  color: red;
+}
+
+.form.validated input:invalid {
+  border: 1px solid #ff0000;
+}
+
+.form.validated input:invalid:focus {
+  border: 2px solid #ff0000;
+  outline: none;
+}
+
+.form.validated input:invalid + .subtext.error {
+  display: block;
+}

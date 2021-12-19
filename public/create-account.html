@@ -113,34 +113,43 @@
           <div id="account-form-column">
             <h2>Create new account</h2>
 
-            <form class="form">
+            <form class="form" id="create-account-form">
               <div class="form-row">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" required />
                 <div class="subtext">
                   We'll never share your email with anyone
                 </div>
+                <div class="subtext error"></div>
               </div>
               <div class="form-row">
                 <label for="pwd">Password</label>
-                <input type="password" id="pwd" name="pwd" />
+                <input
+                  type="password"
+                  id="pwd"
+                  name="pwd"
+                  required
+                  minlength="6"
+                />
+                <div class="subtext error"></div>
               </div>
               <div class="form-row">
                 <label for="full-name">Full name</label>
-                <input type="text" id="full-name" name="full-name" />
+                <input type="text" id="full-name" name="full-name" required />
+                <div class="subtext error"></div>
               </div>
               <div class="form-row">
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" />
+                <input type="tel" id="phone" name="phone" required />
+                <div class="subtext error"></div>
               </div>
               <div class="form-row">
                 <label for="country">Country</label>
-                <input type="text" id="country" name="country" />
+                <input type="text" id="country" name="country" required />
+                <div class="subtext error"></div>
               </div>
               <div class="form-row">
-                <a href="account.html">
-                  <button class="button" type="button">Create account</button>
-                </a>
+                <button type="submit" class="button">Create account</button>
               </div>
             </form>
           </div>
@@ -162,5 +171,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="/js/create-account-form-validation.js"></script>
   </body>
 </html>
