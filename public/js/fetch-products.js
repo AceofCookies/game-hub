@@ -3,8 +3,14 @@ const productsUrl = "https://steffen-elsker-skole.com/gamehub-headless-cms/wp-js
 /**
  * Fetches products from the headless CMS
  */
-async function fetchProducts() {
-  const result = await fetch(productsUrl);
+async function fetchProducts(featured = false) {
+  let url = productsUrl;
+
+  if (featured) {
+    url += "?featured=true";
+  }
+
+  const result = await fetch(url);
   const products = await result.json();
 
   return products;
@@ -47,9 +53,82 @@ $(async () => {
 
       gameList.appendChild(newGame);
 
+      // If the product is not on sale, remove the discount div
       if (!product.on_sale) {
         newGame.getElementsByClassName("game-discount")[0].remove();
       }
+    }
+  }
+
+  if (
+    window.location.pathname == "/" ||
+    window.location.pathname == "/index.html"
+  ) {
+    const featuredProducts = await fetchProducts(true);
+
+    if (featuredProducts.length > 1) {
+      console.error(
+        "Got more than one featured product, which is not yet supported",
+        featuredProducts
+      );
+    }
+    else {
+      const product = featuredProducts[0];
+      const featuredGame = document.querySelector("#carousel .page-width");
+
+      const tags = product.tags.map((tag) => {
+        return tag.name;
+      });
+
+      let tagsString = tags.join(", ");
+
+      if (!tagsString) tagsString = "-";
+
+      featuredGame.innerHTML = `
+        <div class="game-info">
+          <h2>${product.name}</h2>
+          ${product.description}
+        </div>
+
+        <div class="game-cover">
+          <div class="left-arrow"></div>
+          <div class="center-column">
+            <img
+              src="${product.images[0].thumbnail}"
+              alt="${product.name}"
+            />
+            <div class="dots">
+              <div class="left-arrow"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot active"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="right-arrow"></div>
+            </div>
+          </div>
+          <div class="right-arrow"></div>
+        </div>
+
+        <div class="game-specs">
+          <dl>
+            <dt>Platforms</dt>
+            <dd>PC, Playbox</dd>
+          </dl>
+          <dl>
+            <dt>Tags</dt>
+            <dd>${tagsString}</dd>
+          </dl>
+          <dl>
+            <dt>Input methods</dt>
+            <dd>Mouse & keyboard, Full controller support</dd>
+          </dl>
+          <dl>
+            <dt>Recent reviews</dt>
+            <dd>Overwhelmingly positive</dd>
+          </dl>
+        </div>
+      `;
     }
   }
 });

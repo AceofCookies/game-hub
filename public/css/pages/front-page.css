@@ -39,6 +39,7 @@
 
 #carousel .game-cover .center-column > img {
   height: 350px;
+  border: 2px solid #FF8100;
 }
 
 #carousel .game-cover .center-column .dots {
