@@ -16,7 +16,42 @@ async function fetchProducts(featured = false) {
   return products;
 }
 
+/**
+ * Fetches a single product from the headless CMS
+ */
+async function fetchProduct(id) {
+  const result = await fetch(productsUrl + "/" + id)
+  return await result.json();
+}
+
+/**
+ * Gets the game ID from the URL
+ */
+function getGameID() {
+  // https://stackoverflow.com/a/901144/16993949
+  const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  }); 
+
+  return params.id;
+}
+
 $(async () => {
+  if (window.location.pathname == "/game-details.html") {
+    const id = getGameID();
+    const game = await fetchProduct(id);
+
+    console.debug(game);
+
+    const title = document.querySelector("h1");
+    const gameName = document.querySelector("#game-name");
+    const gameDescription = document.querySelector("#game-description");
+
+    title.innerHTML = game.name;
+    gameName.innerHTML = game.name;
+    gameDescription.innerHTML = game.description;
+  }
+
   if (window.location.pathname == "/all-games.html") {
     const products = await fetchProducts();
 
@@ -27,7 +62,7 @@ $(async () => {
     for (const product of products) {
       const newGame = document.createElement("a");
       newGame.classList.add('game-list-item');
-      newGame.setAttribute("href", "game-details.html");
+      newGame.setAttribute("href", `game-details.html?id=${product.id}`);
 
       const originalPrice = Number(product.prices.regular_price);
       const salePrice = Number(product.prices.sale_price);
