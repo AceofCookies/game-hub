@@ -37,7 +37,7 @@ function getGameID() {
 }
 
 $(async () => {
-  if (window.location.pathname == "/game-details.html") {
+  if (window.location.pathname.endsWith("/game-details.html")) {
     const id = getGameID();
     const game = await fetchProduct(id);
 
@@ -52,7 +52,7 @@ $(async () => {
     gameDescription.innerHTML = game.description;
   }
 
-  if (window.location.pathname == "/all-games.html") {
+  if (window.location.pathname.endsWith("/all-games.html")) {
     const products = await fetchProducts();
 
     $(".game-list").empty();
@@ -96,8 +96,8 @@ $(async () => {
   }
 
   if (
-    window.location.pathname == "/" ||
-    window.location.pathname == "/index.html"
+    window.location.pathname.endsWith("/") ||
+    window.location.pathname.endsWith("/index.html")
   ) {
     const featuredProducts = await fetchProducts(true);
 
